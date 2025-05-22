@@ -1,0 +1,19 @@
+Jawaban
+1. Jalankan kode TulisFile1.java beberapa kali dan amati yang terjadi pada file yang
+ditulis. Kemudian, Pada baris 13, ubah parameter false menjadi true. Kemudian
+jalankan kode tersebut beberapa kali dan amati yang terjadi pada file yang ditulis.
+=> ketika false, isi file selalu ditimpa setiap kali program dijalankan dan hanya input terakhir yang tersimpan di file
+   saat diubah menjadi true, maka setiap teks yang dimasukkan akan ditambahkan ke akhir file
+   dan hasil output terlihat sama aja
+
+5. Apakah yang salah dengan statement berikut? Berikan penjelasan.
+   var file = new File(“C:\Data\Java\teks.txt”);
+=> kesalahan pada tanda kutip miring ganda bukan tanda kutip biasa "
+   kesalahan pada tanda slash \ dalam string perlu di escape atau diganti dengan /
+   diubah menjadi : 
+   var file = newFile("C:/Data/Java?teks.txt");
+
+6. Apa yang akan terjadi jika kita mencoba untuk membaca isi dari suatu file tetapi
+  file tersebut tidak ada dan kita tidak melakukan pengecekan lebih dulu
+=> program akan menjadi IOException seperti FileNotFoundException
+   jika tidak terjalani program akan crash dan menampilkan stack trace kesalahan
